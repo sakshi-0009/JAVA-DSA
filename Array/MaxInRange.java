@@ -25,3 +25,5 @@ public class MaxInRange {
 		System.out.println("Maximum element upto given range is : "+max);
 	}
 }
+//Time Complexity : O(N)
+//Space Complexity : O(1)
