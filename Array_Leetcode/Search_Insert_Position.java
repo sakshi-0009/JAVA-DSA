@@ -34,7 +34,5 @@ public class Search_Insert_Position {
 		int target = Integer.parseInt(br.readLine());
 		int result = searchInsert(arr, target);
 		System.out.println(result);
-
-		
 	}
 }
