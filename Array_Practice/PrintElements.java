@@ -1,4 +1,4 @@
-package Array;
+package Array_Practice;
 
 import java.io.*;
 

@@ -1,8 +1,8 @@
-package Array;
+package Array_Practice;
 
 import java.io.*;
 
-public class MaxInRange {
+public class GreaterThanItself_BruteForce {
 
 	public static void main(String[] args) throws IOException{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -14,16 +14,17 @@ public class MaxInRange {
 		for(int i=0; i<arr.length; i++) {
 			arr[i] = Integer.parseInt(br.readLine());
 		}
-		System.out.println("Enter range : ");
-		int Range = Integer.parseInt(br.readLine());
-		int max = Integer.MIN_VALUE;
-		for(int i=0; i<=Range; i++) {
-			if(max < arr[i]) {
-				max = arr[i];
+		int count = 0;
+		for(int i=0; i<arr.length; i++) {
+			for(int j=0; j<arr.length; j++) {
+				if(arr[i]<arr[j]) {
+					count++;
+					break;
+				}
 			}
 		}
-		System.out.println("Maximum element upto given range is : "+max);
+		System.out.println("The no. of elements having at least 1 element greater than itself is : "+count);
 	}
 }
-//Time Complexity : O(N)
+//Time Complexity : O(N^2)
 //Space Complexity : O(1)
