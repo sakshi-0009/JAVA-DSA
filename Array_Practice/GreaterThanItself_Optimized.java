@@ -14,6 +14,7 @@ public class GreaterThanItself_Optimized {
 		for(int i=0; i<arr.length; i++) {
 			arr[i] = Integer.parseInt(br.readLine());
 		}
+		
 		int N = arr.length;
 		int count = 0;
 		int max = Integer.MIN_VALUE;
