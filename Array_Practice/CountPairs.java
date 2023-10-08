@@ -14,6 +14,7 @@ public class CountPairs {
 		for(int i=0; i<arr.length; i++) {
 			arr[i] = Integer.parseInt(br.readLine());
 		}
+		
 		System.out.println("Enter sum : ");
 		int sum = Integer.parseInt(br.readLine());
 		int count = 0;
