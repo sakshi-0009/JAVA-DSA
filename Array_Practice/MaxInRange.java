@@ -16,6 +16,7 @@ public class MaxInRange {
 		}
 		System.out.println("Enter range : ");
 		int Range = Integer.parseInt(br.readLine());
+		
 		int max = Integer.MIN_VALUE;
 		for(int i=0; i<=Range; i++) {
 			if(max < arr[i]) {
