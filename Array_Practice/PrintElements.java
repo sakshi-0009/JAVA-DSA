@@ -14,7 +14,6 @@ public class PrintElements {
 		for(int i=0; i<arr.length; i++) {
 			arr[i]=Integer.parseInt(br.readLine());
 		}
-		
 		System.out.println("Array Elements are : ");
 		for(int i=0; i<arr.length; i++) {
 			System.out.print(arr[i]+" ");
