@@ -1,3 +1,5 @@
+//Binary Search without recursion :
+
 package Searching;
 
 import java.io.*;
@@ -43,3 +45,5 @@ public class BinarySearch_BruteForce {
 		}
 	}
 }
+//Time Complexity : O(N)
+//Space Complexity : O(1)
