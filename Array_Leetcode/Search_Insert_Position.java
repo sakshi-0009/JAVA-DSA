@@ -1,5 +1,4 @@
 package Array_Leetcode;
-
 import java.io.*;
 
 public class Search_Insert_Position {
