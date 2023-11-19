@@ -1,27 +1,25 @@
-//Binary Search without recursion :
+//Binary Search using recursion :
 
-package Searching;
+package Searching_Algorithms;
 
 import java.io.*;
 
-public class BinarySearch_BruteForce {
+public class BinarySearch_Recursion {
 	
-	static int binarySearch(int arr[], int search) {
-		int start = 0;
-		int end = arr.length-1;
-		while(start<=end) {
-			int mid = (start+end)/2;
-			if(arr[mid]==search) {
-				return mid;
-			}
-			if(arr[mid]<search) {
-				start = mid+1;
-			}else {
-				end = mid-1;
-			}
+	static int binarySearch(int arr[], int search, int start, int end) {
+		 
+		if(start>end) {
+			return -1;
 		}
-		return -1;
-		
+		int mid = (start+end)/2;
+		if(arr[mid]==search) {
+			return mid;
+		}
+		if(arr[mid]<search) {
+			return binarySearch(arr,mid+1,end,search);
+		}else {
+			return binarySearch(arr,start,mid-1,search);
+		}	
 	}
 
 	public static void main(String[] args) throws IOException{
@@ -36,12 +34,13 @@ public class BinarySearch_BruteForce {
 		}
 		System.out.println("Enter Search element: ");
 		int search = Integer.parseInt(br.readLine());
-		
-		int index = binarySearch(arr,search);
+		int start = 0;
+		int end = arr.length-1;
+		int index = binarySearch(arr,search,start,end);
 		if(index==-1) {
 			System.out.println("Element not found!");
 		}else {
-			System.out.println("ELements found at index: "+index);
+			System.out.println("Elements found at index: "+index);
 		}
 	}
 }
