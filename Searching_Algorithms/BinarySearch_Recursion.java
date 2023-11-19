@@ -1,7 +1,6 @@
 //Binary Search using recursion :
 
 package Searching_Algorithms;
-
 import java.io.*;
 
 public class BinarySearch_Recursion {
