@@ -26,7 +26,7 @@ public class Bubble_Sort_BruteForce {
 			System.out.print(arr[i]+" ");
 		}
 		System.out.println();
-		System.out.println("Iterations: "+itr);
+		System.out.println("Iterations: "+itr); 	//Number of iterations: 20 (condition : j<arr.length-i-1)
 	}
 }
 //Time complexity : O(N^2)
