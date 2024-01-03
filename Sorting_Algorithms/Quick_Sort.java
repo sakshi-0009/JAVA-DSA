@@ -37,4 +37,5 @@ public class Quick_Sort {
 		System.out.println(Arrays.toString(arr));
 	}
 }
-
+//Time complexity : O(N^2)
+//Space complexity : O(1)
